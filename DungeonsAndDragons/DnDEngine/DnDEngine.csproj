@@ -40,8 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Characters\Age\AgeEffectService.cs" />
+    <Compile Include="Characters\Age\StartingAgeService.cs" />
+    <Compile Include="Characters\Alignment.cs" />
+    <Compile Include="Characters\Feats\Feats.cs" />
+    <Compile Include="Characters\ICharacter.cs" />
+    <Compile Include="Characters\Jobs\JobThings.cs" />
+    <Compile Include="Characters\Skills\Skills.cs" />
+    <Compile Include="Characters\Stats\BaseStats.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Characters\Races\RaceThings.cs" />
+    <Compile Include="Roller\DiceRoller.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Characters\Equipment\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
