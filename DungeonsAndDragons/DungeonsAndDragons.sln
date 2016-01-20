@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnDEngine", "DnDEngine\DnDEngine.csproj", "{DFEFBE43-CE2D-4E24-BA22-894E8416F6C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnDEngineTester", "DnDEngineTester\DnDEngineTester.csproj", "{2E7C5941-2527-46BE-B971-FB181E36DB2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DndCharacterCreator", "DndCharacterCreator\DndCharacterCreator.csproj", "{3D106A25-F083-4230-8DC7-ECA22AFEAB70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFEFBE43-CE2D-4E24-BA22-894E8416F6C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEFBE43-CE2D-4E24-BA22-894E8416F6C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFEFBE43-CE2D-4E24-BA22-894E8416F6C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFEFBE43-CE2D-4E24-BA22-894E8416F6C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E7C5941-2527-46BE-B971-FB181E36DB2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E7C5941-2527-46BE-B971-FB181E36DB2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E7C5941-2527-46BE-B971-FB181E36DB2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E7C5941-2527-46BE-B971-FB181E36DB2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D106A25-F083-4230-8DC7-ECA22AFEAB70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D106A25-F083-4230-8DC7-ECA22AFEAB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D106A25-F083-4230-8DC7-ECA22AFEAB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D106A25-F083-4230-8DC7-ECA22AFEAB70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
