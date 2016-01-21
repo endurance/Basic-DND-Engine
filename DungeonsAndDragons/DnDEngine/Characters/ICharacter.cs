@@ -9,6 +9,7 @@ namespace DnDEngine.Characters
 {
     public interface ICharacter
     {
+        bool DoSomething(string name);
         IRace Race { get; set; }
         int Age { get; set; }
     }
