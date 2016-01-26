@@ -38,5 +38,16 @@ namespace DnDEngine.Roller
         {
             return new Random().Next(1, 4);
         }
+
+        // the no good fun killer lazy version of rolling dice
+        public static int RollDice(int NumberOfSides, int NumberOfDice)
+        {
+            int RandomNumber = 0;
+            for (int i = 1; i <= NumberOfDice; i++)
+            {
+                RandomNumber += new Random().Next(1, NumberOfSides);
+            }
+            return RandomNumber;
+        }
     }
 }
