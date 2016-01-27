@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DnDEngine.Characters.Jobs
+namespace DnDEngine.Data
 {
-    //#JustWork
-    public interface IJob
+    public class Class1
     {
-        // TODO: Filter down what all need to do.
     }
 }

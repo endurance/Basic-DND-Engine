@@ -40,7 +40,7 @@ namespace DnDEngine.Roller
         }
 
         // the no good fun killer lazy version of rolling dice
-        public static int RollDice(int numberOfSides, int numberOfDice)
+        public static int RollDice(int numberOfDice, int numberOfSides)
         {
             int randomNumber = 0;
             for (int i = 1; i <= numberOfDice; i++)
