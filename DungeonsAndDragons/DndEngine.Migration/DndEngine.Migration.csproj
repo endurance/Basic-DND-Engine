@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{314982CA-38ED-48C1-84E4-C2D3CA934373}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DndEngine.Migration</RootNamespace>
+    <AssemblyName>DndEngine.Migration</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="roundhouse, Version=0.8.6.0, Culture=neutral, PublicKeyToken=91b86fd44f1f23bc, processorArchitecture=x86">
+      <HintPath>..\packages\roundhouse.msbuild.0.8.6\lib\roundhouse.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="roundhouse.tasks, Version=0.8.6.0, Culture=neutral, PublicKeyToken=91b86fd44f1f23bc, processorArchitecture=x86">
+      <HintPath>..\packages\roundhouse.msbuild.0.8.6\lib\roundhouse.tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBDeploy_MSBuild.proj" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Deployment\functions\ufn_GetDate.sql" />
+    <Content Include="Deployment\permissions\0001_AppRole.sql" />
+    <Content Include="Deployment\permissions\0002_AppReadOnlyRole.sql" />
+    <Content Include="Deployment\permissions\0003_AppPermissionsWiring.sql" />
+    <Content Include="Deployment\permissions\LOCAL.GrantRobDataReaderDataWriterPermissions.ENV.sql" />
+    <Content Include="Deployment\permissions\TEST.GrantRobDataReaderDataWriterPermissions.ENV.sql" />
+    <Content Include="Deployment\runAfterCreateDatabase\0000_CreateSchemas.sql" />
+    <Content Include="Deployment\runAfterOtherAnyTimeScripts\createFiveItems.sql" />
+    <Content Include="Deployment\sprocs\usp_GetDate.sql" />
+    <Content Include="Deployment\sprocs\usp_SelectTimmy.sql" />
+    <Content Include="Deployment\up\0001_CreateTables.sql" />
+    <Content Include="Deployment\up\0001_CreateTables_NH.sql" />
+    <Content Include="Deployment\up\0002_ChangeTable.sql" />
+    <Content Include="Deployment\up\0003_TestBatchSplitter.sql" />
+    <Content Include="Deployment\views\vw_Dude.sql" />
+    <Content Include="samples.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
