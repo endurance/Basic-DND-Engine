@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Linq;
+using DnDEngine.Characters.Skills;
 
 namespace DnDEngine.Characters.Stats
 {
-    public class BaseStats
+    public class BaseStats 
     {
         public int Strength { get; set; }
         public int Dexterity { get; set; }
@@ -11,6 +11,7 @@ namespace DnDEngine.Characters.Stats
         public int Intelligence { get; set; }
         public int Wisdom { get; set; }
         public int Charisma { get; set; }
+
         public static BaseStats operator +(BaseStats left, BaseStats right)
         {
             return new BaseStats
@@ -22,6 +23,28 @@ namespace DnDEngine.Characters.Stats
                 Wisdom = left.Wisdom + right.Wisdom,
                 Charisma = left.Charisma + right.Charisma
             };
+        }
+
+        public int GetStat(BaseStat stat)
+        {
+            switch (stat)
+            {
+                case BaseStat.Strength:
+                    return Strength;
+                case BaseStat.Dexterity:
+                    break;
+                case BaseStat.Constitution:
+                    break;
+                case BaseStat.Wisdom:
+                    break;
+                case BaseStat.Intelligence:
+                    break;
+                case BaseStat.Charisma:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException("stat", stat, null);
+            }
+            return 0;
         }
     }
 }

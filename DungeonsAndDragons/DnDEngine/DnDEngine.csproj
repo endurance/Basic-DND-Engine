@@ -49,6 +49,7 @@
     <Compile Include="Characters\Jobs\IStartingAgeRepository.cs" />
     <Compile Include="Characters\Jobs\Race.cs" />
     <Compile Include="Characters\Jobs\StartingAge.cs" />
+    <Compile Include="Characters\Skills\SkillRepository\SkillRepository.cs" />
     <Compile Include="Characters\Skills\Skills.cs" />
     <Compile Include="Characters\Stats\BaseStats.cs" />
     <Compile Include="Engine.cs" />
@@ -58,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Characters\Equipment\" />
-    <Folder Include="Characters\Skills\SkillRepository\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using DnDEngine.Characters.Races;
 using DnDEngine.Characters.Skills;
-
+using DnDEngine.Characters.Stats;
+using DnDEngine.Characters.Feats;
 namespace DnDEngine.Characters
 {
     public interface ICharacter
     {
-        bool DoSomething(string name);
         IRace Race { get; set; }
         int Age { get; set; }
-        List<ISkill> Skills { get; set; } 
+        List<Skill> Skills { get; set; }
+        List<IFeat> Feats { get; set; }
+        BaseStats BaseStats { get; set; }
+        bool DoSomething(string name);
     }
 }
