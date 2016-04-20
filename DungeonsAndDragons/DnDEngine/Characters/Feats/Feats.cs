@@ -7,9 +7,9 @@ namespace DnDEngine.Characters.Feats
     // will need to figurte out logic
     public interface IFeat
     {
-        int Id { get; set; }
-        
+        int Id { get; set; }        
         string Name { get; set; }
+        void activateFeat();
     }
 
     public interface ISkillFeat:IFeat
@@ -20,17 +20,19 @@ namespace DnDEngine.Characters.Feats
 
     public interface ICombatFeat : IFeat
     {
+        
         int Bonus { get; set; }
     }
 
     public interface IWeaponFeat : IFeat
     {
+        int WeaponId { get; set; }
         int Bonus { get; set; }
     }
 
     public interface IArmorFeat : IFeat
     {
-        
+        int ArmorId { get; set; }
         int Bonus { get; set; }
     }
 
