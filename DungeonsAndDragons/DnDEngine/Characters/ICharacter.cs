@@ -3,6 +3,7 @@ using DnDEngine.Characters.Races;
 using DnDEngine.Characters.Skills;
 using DnDEngine.Characters.Stats;
 using DnDEngine.Characters.Feats;
+using DnDEngine.Characters.Jobs;
 namespace DnDEngine.Characters
 {
     public interface ICharacter
@@ -10,7 +11,8 @@ namespace DnDEngine.Characters
         IRace Race { get; set; }
         int Age { get; set; }
         List<Skill> Skills { get; set; }
-        List<IFeat> Feats { get; set; }
+        List<Feat> Feats { get; set; }
+        List<Job> Jobs { get; set; } 
         BaseStats BaseStats { get; set; }
         bool DoSomething(string name);
     }
