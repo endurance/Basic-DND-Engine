@@ -32,19 +32,19 @@ namespace DnDEngine.Characters.Stats
                 case BaseStat.Strength:
                     return Strength;
                 case BaseStat.Dexterity:
-                    break;
+                    return Dexterity;
+                    
                 case BaseStat.Constitution:
-                    break;
+                    return Constitution;
                 case BaseStat.Wisdom:
-                    break;
+                    return Wisdom;
                 case BaseStat.Intelligence:
-                    break;
+                    return Intelligence;
                 case BaseStat.Charisma:
-                    break;
+                    return Charisma;
                 default:
                     throw new ArgumentOutOfRangeException("stat", stat, null);
-            }
-            return 0;
+            }            
         }
     }
 }

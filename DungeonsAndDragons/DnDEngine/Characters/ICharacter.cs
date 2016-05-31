@@ -13,7 +13,8 @@ namespace DnDEngine.Characters
         List<Skill> Skills { get; set; }
         List<Feat> Feats { get; set; }
         List<Job> Jobs { get; set; } 
-        BaseStats BaseStats { get; set; }
+        BaseStats BaseStats { get; set; }        
+        int Experience { get; set; }
         bool DoSomething(string name);
     }
 }

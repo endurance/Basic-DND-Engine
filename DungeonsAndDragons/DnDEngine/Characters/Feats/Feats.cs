@@ -20,7 +20,8 @@ namespace DnDEngine.Characters.Feats
     }
     public  class Feat
     {
-        public int Id { get; set; }                      
+        public int Id { get; set; }
+        public int ParentFeatId { get; set; }                      
         public string Name { get; set; }
         public FeatTypes Type { get; set; }
         public List<Skill> Skills { get; set; }
